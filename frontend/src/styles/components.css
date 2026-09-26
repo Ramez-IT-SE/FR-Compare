@@ -100,3 +100,29 @@ dd { overflow-wrap: anywhere; }
   .supplier-form-panel { padding: 20px 16px; }
   .workspace-content main > dl:not(.row) { grid-template-columns: 1fr; }
 }
+@media (min-width: 1024px) and (max-width: 1440px) {
+  button,
+  .btn {
+    min-height: 40px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 14px;
+  }
+
+  table th {
+    font-size: 14px;
+  }
+
+  table td {
+    font-size: 14px;
+  }
+
+  .status-badge {
+    font-size: 13px;
+  }
+}
