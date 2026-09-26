@@ -100,29 +100,121 @@ dd { overflow-wrap: anywhere; }
   .supplier-form-panel { padding: 20px 16px; }
   .workspace-content main > dl:not(.row) { grid-template-columns: 1fr; }
 }
+/* Compact desktop / laptop controls */
 @media (min-width: 1024px) and (max-width: 1440px) {
-  button,
   .btn {
     min-height: 40px;
-    padding: 8px 16px;
+    padding: 8px 14px;
     font-size: 14px;
   }
 
-  input,
-  select,
-  textarea {
+  .btn-primary {
+    min-height: 42px;
+    padding: 9px 16px;
     font-size: 14px;
   }
 
-  table th {
+  .btn-sm {
+    min-height: 36px;
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+
+  .workspace-content a:not(.btn):not(.page-link),
+  .auth-panel a {
     font-size: 14px;
   }
 
-  table td {
+  .form-control,
+  .form-select {
+    min-height: 42px;
+    padding: 8px 11px;
     font-size: 14px;
+  }
+
+  .form-label,
+  label {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .workspace-content form.row,
+  section[aria-label="Supplier controls"] {
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  .filter-toolbar {
+    --bs-gutter-x: 14px;
+    --bs-gutter-y: 14px;
+  }
+
+  .filter-toolbar label {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  .filter-toolbar .btn {
+    min-height: 42px;
+    padding: 9px 15px;
+    font-size: 14px;
+  }
+
+  .supplier-form-panel {
+    padding: 26px;
+  }
+
+  fieldset.border {
+    padding: 20px !important;
+  }
+
+  .table-responsive {
+    margin: 20px 0;
+  }
+
+  .table {
+    font-size: 14px;
+  }
+
+  .table > :not(caption) > * > * {
+    padding: 11px 13px;
+  }
+
+  .table th {
+    font-size: 14px;
+  }
+
+  .table td {
+    font-size: 14px;
+  }
+
+  .table td .btn {
+    font-size: 13px;
+    padding: 7px 9px;
+    min-height: 34px;
   }
 
   .status-badge {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .pagination {
+    margin-top: 20px;
+  }
+
+  .page-link {
     font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .workspace-content main > dl:not(.row) {
+    gap: 16px 24px;
+    padding: 20px 0;
+    margin-block: 24px 32px;
+  }
+
+  .workspace-content h2 {
+    margin-top: 26px;
   }
 }
