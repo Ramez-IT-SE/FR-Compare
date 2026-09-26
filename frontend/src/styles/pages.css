@@ -78,7 +78,7 @@
   .metric-card dt { min-height: 40px; margin-bottom: 16px; }
   .dashboard-greeting h1 { font-size: 38px; }
 }
-/* Dashboard compact desktop / laptop */
+/* Compact dashboard for laptop screens */
 @media (min-width: 1024px) and (max-width: 1440px) {
   .dashboard-hero {
     min-height: 240px;
@@ -86,7 +86,7 @@
   }
 
   .dashboard-greeting {
-    width: min(560px, 54%);
+    width: 54%;
     padding-block: 24px;
   }
 
@@ -98,13 +98,11 @@
 
   .dashboard-greeting > p:last-child {
     font-size: 15px;
-    max-width: 420px;
   }
 
   .mountain-artwork {
     width: 57%;
     max-width: 660px;
-    right: -8px;
     bottom: 22px;
   }
 
@@ -139,18 +137,8 @@
     font-size: 42px;
   }
 
-  .dashboard-page section[aria-label="Recent RFQs"],
-  .dashboard-page section[aria-label="Recent Quotations"] {
-    margin-block: 36px !important;
-  }
-
   .dashboard-page .h4 {
     font-size: 19px;
     margin-bottom: 18px;
-  }
-}
-
-  .dashboard-section {
-    margin-top: 32px;
   }
 }
