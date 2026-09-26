@@ -63,26 +63,96 @@
 }
 /* Compact desktop / laptop sizing */
 @media (min-width: 1024px) and (max-width: 1440px) {
-  .sidebar {
-    width: 256px;
+  .app-shell {
+    grid-template-columns: 256px minmax(0, 1fr);
   }
 
-  .app-main,
-  .main-content {
-    margin-left: 256px;
+  .sidebar-content {
+    padding: 28px 20px 22px;
   }
 
-  .topbar {
-    min-height: 72px;
+  .brand {
+    gap: 10px;
+    font-size: 21px;
+  }
+
+  .brand-mark {
+    width: 40px;
+    height: 40px;
+    font-size: 21px;
+  }
+
+  .brand-caption {
+    font-size: 11px;
+  }
+
+  .sidebar-label {
+    margin: 38px 14px 14px;
+    font-size: 11px;
+  }
+
+  .sidebar-link {
+    gap: 13px;
+    padding: 13px 14px;
+    margin: 4px 0;
+    font-size: 15px;
+  }
+
+  .sidebar-icon {
+    flex-basis: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .sidebar-note {
+    padding: 26px 14px 0;
+    font-size: 13.5px;
+    line-height: 1.6;
+  }
+
+  .sidebar-note .eyebrow {
+    font-size: 11px;
+  }
+
+  .sidebar-note p {
+    margin-top: 10px;
+  }
+
+  .sidebar-artwork {
     height: 72px;
-    padding-left: 24px;
-    padding-right: 24px;
+    margin-bottom: 18px;
   }
 
-  .page-content,
-  .app-content,
-  main {
-    padding-left: 24px;
-    padding-right: 24px;
+  .workspace-topbar {
+    min-height: 72px;
+    padding: 14px 24px;
+  }
+
+  .topbar-context > span {
+    font-size: 18px;
+  }
+
+  .user-tools {
+    gap: 12px;
+  }
+
+  .user-name {
+    font-size: 14px;
+  }
+
+  .user-initials {
+    width: 36px;
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .workspace-topbar .btn {
+    min-height: 40px;
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .workspace-content {
+    padding: 28px 28px 48px;
   }
 }
