@@ -78,54 +78,77 @@
   .metric-card dt { min-height: 40px; margin-bottom: 16px; }
   .dashboard-greeting h1 { font-size: 38px; }
 }
-/* Dashboard compact desktop */
+/* Dashboard compact desktop / laptop */
 @media (min-width: 1024px) and (max-width: 1440px) {
   .dashboard-hero {
-    min-height: auto;
-    padding-top: 24px;
-    padding-bottom: 28px;
+    min-height: 240px;
+    margin-top: -8px;
   }
 
-  .dashboard-hero h1,
-  .dashboard-greeting,
-  .dashboard-title {
-    font-size: 48px;
-    line-height: 1.05;
+  .dashboard-greeting {
+    width: min(560px, 54%);
+    padding-block: 24px;
   }
 
-  .dashboard-hero p {
+  .dashboard-greeting h1 {
+    font-size: 46px;
+    line-height: 1.08;
+    margin-block: 12px;
+  }
+
+  .dashboard-greeting > p:last-child {
     font-size: 15px;
+    max-width: 420px;
+  }
+
+  .mountain-artwork {
+    width: 57%;
+    max-width: 660px;
+    right: -8px;
+    bottom: 22px;
   }
 
   .dashboard-actions {
-    margin-top: 20px;
-    margin-bottom: 28px;
-    gap: 12px;
+    margin-block: 22px 30px;
   }
 
-  .dashboard-kpi-grid,
-  .kpi-grid {
-    gap: 18px;
+  .dashboard-metrics {
+    gap: 16px;
+    margin-bottom: 38px;
   }
 
-  .kpi-card {
-    min-height: 145px;
-    padding: 24px 28px;
+  .metric-card {
+    min-height: 136px;
+    padding: 22px 24px;
   }
 
-  .kpi-card h3,
-  .kpi-card .label {
+  .metric-card dt {
+    font-size: 12.5px;
+    margin-bottom: 20px;
+  }
+
+  .metric-card dd {
+    font-size: 38px;
+  }
+
+  .metric-card dd small {
     font-size: 14px;
   }
 
-  .kpi-card .value,
-  .kpi-value {
+  .savings-metric dd {
     font-size: 42px;
   }
 
-  .section-title {
-    font-size: 20px;
+  .dashboard-page section[aria-label="Recent RFQs"],
+  .dashboard-page section[aria-label="Recent Quotations"] {
+    margin-block: 36px !important;
   }
+
+  .dashboard-page .h4 {
+    font-size: 19px;
+    margin-bottom: 18px;
+  }
+}
 
   .dashboard-section {
     margin-top: 32px;
