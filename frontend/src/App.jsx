@@ -19,7 +19,7 @@ import CompareQuotationsPage from './pages/CompareQuotationsPage';
 
 const App = () => (
   <Routes>
-    <Route path="/" element={<ConnectionTestPage />} />
+    <Route path="/" element={<Navigate to="/dashboard" replace />} />
     <Route path="/login" element={<LoginPage />} />
     <Route path="/register" element={<RegisterPage />} />
     <Route element={<ProtectedRoute />}>
