@@ -61,3 +61,28 @@
   .topbar-context > span { font-size: 18px; }
   .workspace-topbar { gap: 12px; }
 }
+/* Compact desktop / laptop sizing */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .sidebar {
+    width: 256px;
+  }
+
+  .app-main,
+  .main-content {
+    margin-left: 256px;
+  }
+
+  .topbar {
+    min-height: 72px;
+    height: 72px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .page-content,
+  .app-content,
+  main {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
