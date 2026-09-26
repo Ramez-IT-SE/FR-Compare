@@ -78,3 +78,56 @@
   .metric-card dt { min-height: 40px; margin-bottom: 16px; }
   .dashboard-greeting h1 { font-size: 38px; }
 }
+/* Dashboard compact desktop */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .dashboard-hero {
+    min-height: auto;
+    padding-top: 24px;
+    padding-bottom: 28px;
+  }
+
+  .dashboard-hero h1,
+  .dashboard-greeting,
+  .dashboard-title {
+    font-size: 48px;
+    line-height: 1.05;
+  }
+
+  .dashboard-hero p {
+    font-size: 15px;
+  }
+
+  .dashboard-actions {
+    margin-top: 20px;
+    margin-bottom: 28px;
+    gap: 12px;
+  }
+
+  .dashboard-kpi-grid,
+  .kpi-grid {
+    gap: 18px;
+  }
+
+  .kpi-card {
+    min-height: 145px;
+    padding: 24px 28px;
+  }
+
+  .kpi-card h3,
+  .kpi-card .label {
+    font-size: 14px;
+  }
+
+  .kpi-card .value,
+  .kpi-value {
+    font-size: 42px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .dashboard-section {
+    margin-top: 32px;
+  }
+}
